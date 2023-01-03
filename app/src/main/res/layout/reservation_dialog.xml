@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="20dp">
+
+    <TextView
+            android:text="Vinny's Italian Restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_business_name"
+            android:textSize="20sp"
+            android:textColor="@color/purple_200"
+            android:gravity="center"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_label"
+            android:text="Email"
+            android:textColor="@color/purple_200"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:id="@+id/res_email" android:minHeight="48dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_label"
+            android:text="Date"
+            android:textColor="@color/purple_200"/>
+
+    <EditText
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mm-dd-yyyy"
+            android:id="@+id/res_date" android:minHeight="48dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_label"
+            android:text="Time"
+            android:textColor="@color/purple_200"/>
+
+    <EditText
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hh:mm"
+            android:id="@+id/res_time" android:minHeight="48dp"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+        <Button
+                android:id="@+id/res_submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="230dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/purple_200"
+                android:text="Submit"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+                android:id="@+id/res_cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/purple_200"
+                android:text="Cancel"
+                style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+</LinearLayout>

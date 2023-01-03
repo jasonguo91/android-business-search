@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerCategories">
+        <item>Default</item>
+        <item>Arts &amp; Entertainment</item>
+        <item>Food</item>
+        <item>Health &amp; Medical</item>
+        <item>Hotels &amp; Travel</item>
+        <item>Professional Services</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:paddingVertical="10dp">
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="60dp"
+                 >
+
+        <TableRow
+                android:id="@+id/business_detail_row"
+
+                android:onClick="onRowClick" android:layout_height="88dp">
+            <TextView
+                    android:id="@+id/business_index"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="8dp"/>
+
+            <ImageView
+                    android:id="@+id/business_image"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/loading_shape"
+                    android:layout_margin="6dp"></ImageView>
+
+            <TextView
+                    android:id="@+id/business_name"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:text="Vinny's Italian Restaurant is a super long"
+                    android:textAlignment="center"
+            />
+
+            <TextView
+                    android:id="@+id/business_rating"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:gravity="center"
+                    android:text="4.5"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:id="@+id/business_distance"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:text="7"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:id="@+id/business_id"
+                    android:visibility="gone"/>
+
+        </TableRow>
+    </TableLayout>
+    <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/black"/>
+
+</LinearLayout>

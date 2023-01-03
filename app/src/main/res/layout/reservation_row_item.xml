@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="1dp">
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="88dp"
+                 android:paddingVertical="1dp">
+        <TableRow
+                android:id="@+id/reservation_row"
+                >
+            <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/reservation_index"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:gravity="center"/>
+
+            <TextView
+                    android:id="@+id/res_name_row"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="The Frederick Hotel's super long name for testing purposes"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="false"
+                    android:maxLines="3"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/res_date_row"
+                    android:layout_width="75dp"
+                    android:paddingTop="5dp"
+                    android:layout_height="match_parent"
+                    android:text="12-25-2022"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/res_time_row"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="10:35"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/res_email_row"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="superLongEmail@gmail.com"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="5dp"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

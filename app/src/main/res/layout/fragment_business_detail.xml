@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".fragment.BusinessDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout android:id="@+id/business_detail_table" android:layout_width="match_parent" android:layout_height="300dp"
+    android:paddingTop="10dp">
+        <TableRow>
+            <TextView
+                    android:text="Address"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+            <TextView
+                    android:text="Price Range"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:id="@+id/business_address"
+                    android:text="6044 Atlantic Blvd Maywood, CA 90270"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"/>
+            <TextView
+                    android:id="@+id/business_price"
+                    android:text="$$"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                    android:text="Phone Number"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+            <TextView
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:id="@+id/business_phone"
+                    android:text="(323) 771-3030"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"/>
+            <TextView
+                    android:id="@+id/business_status"
+                    android:text="Open Now"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+            <TextView
+                    android:text="Visit Yelp For More"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                    android:id="@+id/business_category"
+                    android:text="Pizza | Halal | Chicken Wings"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"/>
+            <TextView
+                    android:id="@+id/business_url"
+                    android:text="Business Link"
+                    android:textAlignment="center"
+                    android:textStyle=""
+                    android:textColor="@color/teal_200"
+                    android:layout_width="205dp"
+                    android:layout_height="70dp"
+                    />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:id="@+id/reserve_button"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:text="@string/reserve_button"
+            android:backgroundTint="#F44336"
+            android:layout_below="@+id/business_detail_table"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="14dp"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reserve_button"
+            android:layout_marginTop="20dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_marginHorizontal="55dp"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    app:iss_period="1000"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    android:id="@+id/imageSlider"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
