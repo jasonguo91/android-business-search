@@ -2,12 +2,12 @@
 - Business Search App using Yelp and Google Places API
 
 ## 1. High Level Description
-: This is the Android App version of "Business Search web application" 
+- This is the Android App version of "Business Search web application" 
 The app allows users to search for businesses, view detailed information, book reservations, and share on social media. 
 
 ## 2. Skillsets
-: Java, Android Studio
-: Google Maps API, Google Serch Nearby API, etc.
+- Java, Android Studio
+- Google Maps API, Google Serch Nearby API, etc.
 
 ## 3. Details
 - The Search features autocomplete and error handling. 
