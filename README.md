@@ -1,4 +1,4 @@
-# Business Search(Android)
+# Business Search (Android)
 - Business Search App using Yelp and Google Places API
 
 ## 1. High Level Description
